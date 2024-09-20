@@ -3,6 +3,7 @@ import Accordion from "./components/accordion";
 import RandomColor from "./components/random_color";
 import ToDo from "./components/todo/ToDo";
 import StarRating from "./components/star_rating";
+import ToDoList from "./components/todo_refactor/comp/ToDoList";
 
 const App = () => {
   const [SApp, setApp] = useState("");
@@ -29,6 +30,11 @@ const App = () => {
             </button>
             <button
               className="bg-blue-300 p-2 rounded-lg"
+              onClick={() => setApp("todo_")}>
+              ToDo_Dup
+            </button>
+            <button
+              className="bg-blue-300 p-2 rounded-lg"
               onClick={() => setApp("star")}>
               Star Rating
             </button>
@@ -47,7 +53,9 @@ const App = () => {
         <RandomColor />
       ) : SApp === "todo" ? (
         <ToDo />
-      ) : SApp === "star" ? (
+      ) : SApp === "todo_" ? (
+        <ToDoList />
+      ):SApp === "star" ? (
         <StarRating />
       ) : null}
     </>
