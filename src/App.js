@@ -4,18 +4,21 @@ import RandomColor from "./components/random_color";
 import ToDo from "./components/todo/ToDo";
 import StarRating from "./components/star_rating";
 import ToDoList from "./components/todo_refactor/comp/ToDoList";
+import Counter from "./components/counter";
+
 const componentsMap = {
   accordion: { component: Accordion, label: "Accordion" },
   random: { component: RandomColor, label: "Random Color Generator" },
   todo: { component: ToDo, label: "ToDo App" },
   todoRefactored: { component: ToDoList, label: "ToDo_Refactored" },
   star: { component: StarRating, label: "Star Rating" },
+  counter: { component: Counter, label: "Counter" },
 };
+
 const App = () => {
   const [SApp, setApp] = useState("");
-
   const SelectedComponent = SApp ? componentsMap[SApp].component : null;
-  console.log(SelectedComponent, "SelectedComponent");
+
   return (
     <>
       <div className="space-x-5">
