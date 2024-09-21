@@ -5,6 +5,7 @@ import ToDo from "./components/todo/ToDo";
 import StarRating from "./components/star_rating";
 import ToDoList from "./components/todo_refactor/comp/ToDoList";
 import Counter from "./components/counter";
+import Search from "./components/search";
 
 const componentsMap = {
   accordion: { component: Accordion, label: "Accordion" },
@@ -13,6 +14,7 @@ const componentsMap = {
   todoRefactored: { component: ToDoList, label: "ToDo_Refactored" },
   star: { component: StarRating, label: "Star Rating" },
   counter: { component: Counter, label: "Counter" },
+  search: { component: Search, label: "Search" },
 };
 
 const App = () => {
