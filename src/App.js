@@ -7,6 +7,7 @@ import ToDoList from "./components/todo_refactor/comp/ToDoList";
 import Counter from "./components/counter";
 import Search from "./components/search";
 import Carousel from "./components/carousel";
+import NavBar from "./components/tree_view/NavBar";
 
 const componentsMap = {
   accordion: { component: Accordion, label: "Accordion" },
@@ -16,7 +17,8 @@ const componentsMap = {
   star: { component: StarRating, label: "Star Rating" },
   counter: { component: Counter, label: "Counter" },
   search: { component: Search, label: "Search" },
-  carousel: { component: Carousel, label: "Carousel" }
+  carousel: { component: Carousel, label: "Carousel" },
+  navbar: { component: NavBar, label: "NavBar" }
 };
 
 const App = () => {
