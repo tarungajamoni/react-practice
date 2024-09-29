@@ -8,6 +8,7 @@ import Counter from "./components/counter";
 import Search from "./components/search";
 import Carousel from "./components/carousel";
 import NavBar from "./components/tree_view/NavBar";
+import Dropdown from "./components/input_dropdown";
 
 const componentsMap = {
   accordion: { component: Accordion, label: "Accordion" },
@@ -18,7 +19,8 @@ const componentsMap = {
   counter: { component: Counter, label: "Counter" },
   search: { component: Search, label: "Search" },
   carousel: { component: Carousel, label: "Carousel" },
-  navbar: { component: NavBar, label: "NavBar" }
+  navbar: { component: NavBar, label: "NavBar" },
+  dropdown: { component: Dropdown, label: "DropDown" }
 };
 
 const App = () => {
